@@ -1,0 +1,14 @@
+Actividad 3: Mi analizador de frecuencias, ahora con gráfico
+
+Nombre: Victoria Principi
+Repositorio de GitHub: https://github.com/victoriaprincipi/diplomatura-ia-modulo-4
+Informe:
+
+¿Por qué el gráfico usa palabras[::-1] y valores[::-1] en lugar de palabras y valores directamente? 
+Con [::-1] las palabras más frecuentes aparecen arriba; sin [::-1], las palabras más frecuentes aparecen abajo. Se invierten tanto palabras como valores para que cada palabra conserve su cantidad de apariciones.
+
+¿Qué pasaría con el gráfico si cambiás top_n=10 por top_n=20? ¿Seguiría siendo legible? 
+Si usamos top_n=10, aparecen las 10 palabras más frecuentes. Si usamos top_n=20, aparecen las 20 más frecuentes. En el caso analizado aquí, el gráfico aún sigue siendo legible.
+
+¿Por qué usar plt.barh() (barras horizontales) en vez de plt.bar() (barras verticales) para este caso?
+Las barras horizontales permiten leer mejor las palabras en una ventana pequeña. En la prueba con barras verticales, algunas etiquetas se superponen. Al ampliar la ventana mejora la lectura, pero las barras horizontales permiten leer las palabras completas incluso con el tamaño más pequeño.
