@@ -1,0 +1,10 @@
+Actividad 4, Módulo 4
+
+¿Qué pasaría con test_frecuencias_mayusculas si en analizador.py sacaras el .lower()? 
+Sin .lower(), ‘Sol’, ‘sol’ y ‘SOL’ se contaron como palabras distintas, una vez cada una. Falló porque esperaba 3 para "sol" y obtuvo 1, y pytest mostró AssertionError y assert 1 == 3.
+
+¿Por qué contar_frecuencias recibe un string directamente en vez de una ruta de archivo, como en la Clase 2? ¿Qué ventaja tiene eso a la hora de escribir pruebas? 
+Es más sencillo y ágil para probar que la función ande correctamente porque no hay que crear un archivo por cada string o caso.
+
+Se te ocurre algún otro caso de borde para probar (por ejemplo, texto con signos de puntuación, o con espacios de más)? Escribí una cuarta prueba con ese caso.
+Probé un texto con espacios adicionales "  sol   luna  sol  " para comprobar que .split() funcionara correctamente: que contara 2 veces "sol" y 1 vez "luna". La prueba pasó.
